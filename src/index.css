@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional Global Utility */
+.glass-container {
+  @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-lg rounded-3xl;
+}
+html {
+  scroll-behavior: smooth;
+}
