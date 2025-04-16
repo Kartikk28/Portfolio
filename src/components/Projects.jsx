@@ -134,7 +134,7 @@ function Projects() {
     <div 
       className="bg-zinc-900 text-white p-6 rounded-xl max-w-xl w-full space-y-4 relative"
       style={{
-        top: '0%', // Manually adjust the position (you can tweak this as per your preference)
+        top: '-20%', // Manually adjust the position (you can tweak this as per your preference)
         left: '20%',
         transform: 'translate(-50%, -50%)'
       }}
