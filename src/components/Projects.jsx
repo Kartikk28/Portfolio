@@ -32,6 +32,8 @@ const projects = [
       "Retro-themed music streaming app with real-time track discovery and saved playlists.",
     type: "Web",
     image: "/public/retrobeats.png",
+    imageWidth: "150%",   // Add image width here
+    imageHeight: "auto",  // Add image height here
     tech: ["React", "Tailwind", "Express.js", "MongoDB"],
     github: "https://github.com/Kartikk28/RetroBeats"
   },
@@ -90,8 +92,8 @@ function Projects() {
   alt={project.title}
   className="rounded-t-3xl mx-auto"
   style={{
-    width: "255%", // Try 75%, 85%, 95% etc. — tweak as needed
-    height: "390px", // or "auto", "200px", etc.
+    width: "project.imageWidth", // Try 75%, 85%, 95% etc. — tweak as needed
+    height: "370px", // or "auto", "200px", etc.
     objectFit: "contain", // Try "contain" or "cover"
     padding: "0.5rem"
   }}
@@ -125,46 +127,56 @@ function Projects() {
           ))}
         </div>
 
-        {/* Project Modal - CENTERED */}
-        {selected && (
-          <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
-            <div className="bg-zinc-900 text-white p-6 rounded-xl max-w-xl w-full space-y-4 relative">
-              <button
-                onClick={() => setSelected(null)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"
-              >
-                ×
-              </button>
-              <h3 className="text-2xl font-bold">{selected.title}</h3>
-              <p className="text-sm text-gray-400">{selected.company}</p>
-              <img
-                src={selected.image}
-                alt={selected.title}
-                className="w-full h-48 object-contain p-2 rounded-lg"
-              />
-              <p className="text-gray-300 text-sm">{selected.description}</p>
-              <div className="text-sm text-gray-400">Technologies:</div>
-              <ul className="flex flex-wrap gap-2 text-sm">
-                {selected.tech.map((t, i) => (
-                  <li
-                    key={i}
-                    className="px-3 py-1 bg-white/10 rounded-full text-white"
-                  >
-                    {t}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={selected.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center text-sm text-blue-400 hover:underline"
-              >
-                <FaGithub className="mr-2" /> View on GitHub
-              </a>
-            </div>
-          </div>
-        )}
+     {/* Project Modal */}
+{selected && (
+  <div className="fixed inset-0 z-30 bg-black/80 flex items-center justify-center p-4">
+    {/* Modal content with manual adjustments */}
+    <div 
+      className="bg-zinc-900 text-white p-6 rounded-xl max-w-xl w-full space-y-4 relative"
+      style={{
+        top: '-5%', // Manually adjust the position (you can tweak this as per your preference)
+        left: '20%',
+        transform: 'translate(-50%, -50%)'
+      }}
+    >
+      <button
+        onClick={() => setSelected(null)}
+        className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"
+      >
+        ×
+      </button>
+      <h3 className="text-2xl font-bold">{selected.title}</h3>
+      <p className="text-sm text-gray-400">{selected.company}</p>
+      <img
+        src={selected.image}
+        alt={selected.title}
+        className="w-full h-48 object-contain p-2 rounded-lg"
+      />
+      <p className="text-gray-300 text-sm">{selected.description}</p>
+      <div className="text-sm text-gray-400">Technologies:</div>
+      <ul className="flex flex-wrap gap-2 text-sm">
+        {selected.tech.map((t, i) => (
+          <li
+            key={i}
+            className="px-3 py-1 bg-white/10 rounded-full text-white"
+          >
+            {t}
+          </li>
+        ))}
+      </ul>
+      <a
+        href={selected.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 inline-flex items-center text-sm text-blue-400 hover:underline"
+      >
+        <FaGithub className="mr-2" /> View on GitHub
+      </a>
+    </div>
+  </div>
+)}
+
+
 
         <motion.div
           className="mt-20 border-t border-white/10 pt-10 text-center text-gray-400 text-sm"

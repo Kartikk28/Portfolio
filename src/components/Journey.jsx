@@ -1,40 +1,38 @@
-// Journey.jsx (Power BI-style + Parallax Scroll Reveal with resume-based expansion)
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaCode, FaUserFriends, FaTools, FaReact, FaLaptopCode, FaGlobe } from "react-icons/fa";
+import { FaCode, FaLaptopCode, FaTools, FaReact, FaGlobe } from "react-icons/fa";
 import { useRef } from "react";
 
 const journey = [
   {
+    year: "2021",
+    title: "Completed Aerospace Manufacturing Engineering Diploma",
+    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from September 2019 to April 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
+    icon: <FaCode className="text-blue-500 text-2xl" />,
+  },
+  {
     year: "2022",
-    title: "Completed Aerospace Manufacturing Engineering diploma",
-    desc: "Learned Java and C during college, sparking my interest in software. Built foundational CS knowledge alongside mechanical understanding.",
-    icon: <FaCode className="text-blue-500 text-xl" />,
+    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto",
+    desc: "Worked as a CNC programmer for 2 years, optimizing manufacturing processes, operating machinery, and performing quality control in a high-precision environment. Gained practical skills in programming and working with automation technologies.",
+    icon: <FaLaptopCode className="text-orange-500 text-2xl" />,
   },
   {
     year: "2023",
-    title: "Began Software Engineering at York University",
-    desc: "Participated in student clubs like CSHub and Robotics Society. Built first full-stack applications and contributed to campus tech events.",
-    icon: <FaUserFriends className="text-purple-400 text-xl" />,
-  },
-
-  {
-    year: "2024",
-    title: "Developed Smart Plant Monitor & other systems",
-    desc: "Created an IoT plant monitoring system using Arduino, sensors, and a web-based dashboard. Designed and deployed several embedded systems.",
-    icon: <FaTools className="text-green-400 text-xl" />,
+    title: "Started Software Engineering at York University",
+    desc: "Began my Software Engineering degree, participated in student clubs such as CSHub, collaborated in tech events and workshops.",
+    icon: <FaReact className="text-cyan-500 text-2xl" />,
   },
   {
     year: "2024",
-    title: "Launched RetroBeats Music Web App",
-    desc: "Built a full-stack music platform using React, Tailwind, Express.js, and MongoDB. Connected APIs for album art and audio previews.",
-    icon: <FaReact className="text-cyan-400 text-xl" />,
+    title: "Developed Smart Plant Monitor & Other Systems",
+    desc: "Created IoT-based smart systems using Arduino, C++, and sensors for plant monitoring. Developed multiple embedded systems for various projects.",
+    icon: <FaTools className="text-green-500 text-2xl" />,
   },
   {
     year: "2025",
-    title: "Freelancing, Contributing to Open Source & Hosting Projects",
-    desc: "Hosted personal projects, contributed to GitHub repos, and improved UI/UX skills. Built ZenDrive, a full car rental system using Spring Boot.",
-    icon: <FaGlobe className="text-pink-400 text-xl" />,
-  }
+    title: "Freelancing & Contributing to Open Source",
+    desc: "Hosted personal projects on GitHub, contributed to open-source repositories, improved my UI/UX skills, and built ZenDrive, a car rental system using Spring Boot.",
+    icon: <FaGlobe className="text-pink-400 text-2xl" />,
+  },
 ];
 
 function Journey() {
@@ -43,35 +41,31 @@ function Journey() {
   const scaleX = useTransform(scrollYProgress, [0, 1], [0.1, 1]);
 
   return (
-    <section ref={ref} className="min-h-screen bg-black text-white py-24 px-6 relative overflow-hidden">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-20">
+    <section ref={ref} id="home" className="min-h-screen bg-black text-white py-12 px-4 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold text-center mb-16">
           <span className="text-gray-400">My Tech</span> <span className="italic text-white">Journey</span>
         </h2>
 
         {/* Horizontal Progress Bar */}
-        <motion.div style={{ scaleX }} className="origin-left h-1 bg-gradient-to-r from-blue-500 to-fuchsia-500 mb-12 w-full" />
+        <motion.div style={{ scaleX }} className="origin-left h-1 bg-gradient-to-r from-blue-500 to-fuchsia-500 mb-8 w-full" />
 
-        <div className="space-y-20">
+        <div className="space-y-12">
           {journey.map((item, index) => (
             <motion.div
               key={index}
-              className="flex items-start space-x-6 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 shadow-xl"
-              initial={{ opacity: 0, y: 50 }}
+              className="flex items-start space-x-4 bg-black/80 backdrop-blur-sm rounded-lg p-4 border border-white/20 shadow-md hover:scale-105 transition-transform duration-300"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15, duration: 0.6, ease: "easeOut" }}
+              transition={{ delay: index * 0.15, duration: 0.5 }}
               viewport={{ once: true, amount: 0.5 }}
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black border border-gray-700 shadow-inner">
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 border border-gray-600 shadow-md">
                 {item.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold">
-                  <span className="text-gray-400 mr-2">{item.year}</span>{item.title}
-                </h3>
-                <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-xl">
-                  {item.desc}
-                </p>
+                <h3 className="text-lg font-semibold text-white mb-1">{item.year} - {item.title}</h3>
+                <p className="text-gray-300 text-base">{item.desc}</p>
               </div>
             </motion.div>
           ))}

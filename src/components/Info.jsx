@@ -4,22 +4,25 @@ function Info() {
   return (
     <section
       id="info"
-      className="min-h-screen bg-black text-white px-6 py-6 flex flex-col items-center gap-20 mb-0 overflow-hidden"
+      className="min-h-screen bg-black text-white px-6 py-20 flex flex-col items-center gap-20 mb-0 overflow-hidden"
     >
-      <motion.h2
-        className="text-3xl md:text-4xl font-serif italic font-semibold text-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-         <span className="font-bold"></span> About me.
-      </motion.h2>
+     <motion.h2
+  className="text-5xl font-bold text-center tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, type: "spring", stiffness: 80 }}
+>
+  <span className="text-gray-400">About</span> <span className="italic">Me</span>
+</motion.h2>
 
-      {/* BLOCK 1: Profile or Primary Hobby */}
+
+
+
+      {/* Block 1: Profile Picture */}
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl w-full">
         <motion.div
-          className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden border-4 border-gray-708 shadow bg-black/5"
-          whileHover={{ scale: 1.02 }}
+          className="w-full md:w-1/2 aspect-[3/4] rounded-xl overflow-hidden border-4 border-gray-600 shadow-lg transition-transform duration-500 hover:scale-105"
+          whileHover={{ scale: 1.05 }}
         >
           <img src="First.jpeg" alt="Me" className="w-full h-full object-cover" />
         </motion.div>
@@ -36,7 +39,7 @@ function Info() {
         </motion.div>
       </div>
 
-      {/* BLOCK 2 */}
+      {/* Block 2: Free Time */}
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 max-w-6xl w-full">
         <motion.div
           className="w-full md:w-1/2 space-y-4"
@@ -50,20 +53,20 @@ function Info() {
           </p>
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow bg-white/5"
-          whileHover={{ scale: 1.02 }}
+          className="w-full md:w-1/2 aspect-[1] rounded-xl overflow-hidden border-4 border-gray-600 shadow-lg transition-transform duration-500 hover:scale-105"
+          whileHover={{ scale: 1.05 }}
         >
-          <img src="/Adventure.jpeg" alt="Hiking" className="w-full h-full object-cover" />
+          <img src="/wasaga.jpeg" alt="Hiking" className="w-full h-[550px] object-cover" />
         </motion.div>
       </div>
 
-      {/* BLOCK 3 */}
+      {/* Block 3: Adventures */}
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl w-full">
         <motion.div
-          className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow bg-white/5"
-          whileHover={{ scale: 1.02 }}
+          className="w-full md:w-1/2 aspect-[3/4] rounded-xl overflow-hidden border-4 border-gray-600 shadow-lg transition-transform duration-500 hover:scale-105"
+          whileHover={{ scale: 1.05 }}
         >
-          <img src="Kartik.jpeg" alt="Concert" className="w-full h-full object-cover" />
+          <img src="Kartik.jpeg" alt="Concert" className="w-full h-[720px] object-cover" />
         </motion.div>
         <motion.div
           className="w-full md:w-1/2 space-y-4"
@@ -78,7 +81,7 @@ function Info() {
         </motion.div>
       </div>
 
-      {/* BLOCK 4 */}
+      {/* Block 4: Tech & Clubs */}
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 max-w-4xl w-2xl">
         <motion.div
           className="w-full md:w-1/2 space-y-4"
@@ -92,10 +95,10 @@ function Info() {
           </p>
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow bg-white/5"
-          whileHover={{ scale: 1.02 }}
+          className="w-full md:w-1/2 aspect-[3/4] rounded-xl overflow-hidden border-4 border-gray-600 shadow-lg transition-transform duration-500 hover:scale-105"
+          whileHover={{ scale: 1.05 }}
         >
-          <img src="CS.png" alt="CS Hub" className="w-full h-2/4 object-cover" />
+          <img src="CS.png" alt="CS Hub" className="w-full h-[500px] object-contain" />
         </motion.div>
       </div>
 

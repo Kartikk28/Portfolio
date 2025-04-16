@@ -6,7 +6,7 @@ function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-5 mr-5 ml-20 z-50 w-[92%] max-w-[95rem]">
+      className="sticky top-0 z-50 w-full py-4 px-6 bg-black shadow-md">
       <nav
       
         className="relative flex items-center justify-between px-25 py-1 ]"

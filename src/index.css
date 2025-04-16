@@ -6,6 +6,10 @@
 .glass-container {
   @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-lg rounded-3xl;
 }
+body {
+  padding-top: 0px; /* Adjust this based on the height of your navbar */
+}
+
 html {
   scroll-behavior: smooth;
 }
