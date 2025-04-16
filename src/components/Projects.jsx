@@ -11,7 +11,7 @@ const projects = [
     description:
       "A smart plant pot system with moisture, sunlight, and temperature sensors. Sends data to a dashboard.",
     type: "Mobile",
-    image: "/public/arduino.png",
+    image: "arduino.png",
     tech: ["Arduino", "C++", "Grove Kit", "Sensors"],
     github: "https://github.com/yourprofile/Plant-Watering-System-"
   },
@@ -21,7 +21,7 @@ const projects = [
     description:
       "A modern car rental platform built with user authentication, vehicle listings, booking system, and admin dashboard.",
     type: "Web",
-    image: "/public/zendrive.png",
+    image: "zendrive.png",
     tech: ["React", "Spring Boot", "MySQL", "JWT"],
     github: "https://github.com/Kartikk28/Car_Rental"
   },
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Retro-themed music streaming app with real-time track discovery and saved playlists.",
     type: "Web",
-    image: "/public/retrobeats.png",
+    image: "retrobeats.png",
     imageWidth: "150%",   // Add image width here
     imageHeight: "auto",  // Add image height here
     tech: ["React", "Tailwind", "Express.js", "MongoDB"],
@@ -43,7 +43,7 @@ const projects = [
     description:
       "CRUD web platform to manage student marks with login, edit, and graph analytics.",
     type: "Web",
-    image: "/public/mark.png",
+    image: "mark.png",
     tech: ["React", "Node.js", "MongoDB"],
     github: "https://github.com/Kartikk28/MarkManagement"
   }
