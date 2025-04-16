@@ -6,18 +6,18 @@ const journey = [
   {
     year: "2021",
     title: "Completed Aerospace Manufacturing Engineering Diploma",
-    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from September 2019 to April 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
+    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from Jan 2020 to May 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
     icon: <FaCode className="text-blue-500 text-2xl" />,
   },
   {
     year: "2022",
-    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto",
+    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto,CA",
     desc: "Worked as a CNC programmer for 2 years, optimizing manufacturing processes, operating machinery, and performing quality control in a high-precision environment. Gained practical skills in programming and working with automation technologies.",
     icon: <FaLaptopCode className="text-orange-500 text-2xl" />,
   },
   {
     year: "2023",
-    title: "Started Software Engineering at York University",
+    title: "Started Software Engineering at York University, Toronto, CA",
     desc: "Began my Software Engineering degree, participated in student clubs such as CSHub, collaborated in tech events and workshops.",
     icon: <FaReact className="text-cyan-500 text-2xl" />,
   },
