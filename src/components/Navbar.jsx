@@ -40,7 +40,7 @@ function Navbar() {
         {/* 🔗 Socials */}
         <div className="flex items-center space-x-4 text-sm font-medium text-white/80">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Kartikk28/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
