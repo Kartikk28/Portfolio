@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black via-[#111111] to-black text-white flex items-center justify-center px-6 pt-28">
+    <section id="home" className="min-h-screen bg-gradient-to-b from-black via-[#111111] to-black text-white flex items-center justify-center px-6 pt-28">
       <div className="relative w-full h-[92vh] max-w-[95rem] px-10 md:px-20 py-24 bg-[#0b0b0b] border-[8.5px] border-[#3a3a3a] rounded-[28px] shadow-[0_0_80px_rgba(0,0,0,0.1)] shadow-inner backdrop-blur-lg overflow-hidden">
 
         {/* Mac Window Dots */}
