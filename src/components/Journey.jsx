@@ -6,18 +6,18 @@ const journey = [
   {
     year: "2021",
     title: "Completed Aerospace Manufacturing Engineering Diploma",
-    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from Jan 2020 to May 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
+    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from September 2019 to April 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
     icon: <FaCode className="text-blue-500 text-2xl" />,
   },
   {
     year: "2022",
-    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto,CA",
+    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto",
     desc: "Worked as a CNC programmer for 2 years, optimizing manufacturing processes, operating machinery, and performing quality control in a high-precision environment. Gained practical skills in programming and working with automation technologies.",
     icon: <FaLaptopCode className="text-orange-500 text-2xl" />,
   },
   {
     year: "2023",
-    title: "Started Software Engineering at York University, Toronto, CA",
+    title: "Started Software Engineering at York University",
     desc: "Began my Software Engineering degree, participated in student clubs such as CSHub, collaborated in tech events and workshops.",
     icon: <FaReact className="text-cyan-500 text-2xl" />,
   },
@@ -41,7 +41,7 @@ function Journey() {
   const scaleX = useTransform(scrollYProgress, [0, 1], [0.1, 1]);
 
   return (
-    <section ref={ref} id="home" className="min-h-screen bg-black text-white py-12 px-4 relative overflow-hidden">
+    <section ref={ref} id="journey" className="min-h-screen bg-black text-white py-12 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-16">
           <span className="text-gray-400">My Tech</span> <span className="italic text-white">Journey</span>
