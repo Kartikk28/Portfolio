@@ -6,11 +6,9 @@ function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="sticky top-0 z-50 w-full py-4 px-6 bg-black shadow-md">
-      <nav
-      
-        className="relative flex items-center justify-between px-25 py-1 ]"
-      >
+      className="sticky top-0 z-50 w-full py-4 px-6 bg-black shadow-md"
+    >
+      <nav className="relative flex items-center justify-between px-25 py-1 ]">
         {/* 👤 Logo + Name */}
         <div className="flex items-center space-x-3">
           <img src="/logo.png" alt="Logo" className="w-12 h-19" />
@@ -25,10 +23,10 @@ function Navbar() {
         {/* 🧭 Center Nav - Explicit Centering */}
         <div className="flex items-center space-x-6 text-sm font-medium text-white/80">
           <div className="flex items-center space-x-6 bg-white/10 px-6 py-1 rounded-full border border-white/10">
-            <a href="#" className="hover:text-white transition">
+            <a href="#home" className="hover:text-white transition">
               Home
             </a>
-            <a href="#work" className="hover:text-white transition">
+            <a href="#journey" className="hover:text-white transition">
               Work
             </a>
             <a href="#info" className="hover:text-white transition">
@@ -40,7 +38,7 @@ function Navbar() {
         {/* 🔗 Socials */}
         <div className="flex items-center space-x-4 text-sm font-medium text-white/80">
           <a
-            href="https://github.com/Kartikk28"
+            href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
