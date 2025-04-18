@@ -4,16 +4,16 @@ import { useRef } from "react";
 
 const journey = [
   {
-    year: "2021",
-    title: "Completed Aerospace Manufacturing Engineering Diploma",
-    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from September 2019 to April 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
-    icon: <FaCode className="text-blue-500 text-2xl" />,
+    year: "2025",
+    title: "Freelancing & Contributing to Open Source",
+    desc: "Hosted personal projects on GitHub, contributed to open-source repositories, improved my UI/UX skills, and built ZenDrive, a car rental system using Spring Boot.",
+    icon: <FaGlobe className="text-pink-400 text-2xl" />,
   },
   {
-    year: "2022",
-    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto",
-    desc: "Worked as a CNC programmer for 2 years, optimizing manufacturing processes, operating machinery, and performing quality control in a high-precision environment. Gained practical skills in programming and working with automation technologies.",
-    icon: <FaLaptopCode className="text-orange-500 text-2xl" />,
+    year: "2024",
+    title: "Developed Smart Plant Monitor & Other Systems",
+    desc: "Created IoT-based smart systems using Arduino, Java, and sensors for plant monitoring. Developed multiple embedded systems for various projects.",
+    icon: <FaTools className="text-green-500 text-2xl" />,
   },
   {
     year: "2023",
@@ -22,16 +22,16 @@ const journey = [
     icon: <FaReact className="text-cyan-500 text-2xl" />,
   },
   {
-    year: "2024",
-    title: "Developed Smart Plant Monitor & Other Systems",
-    desc: "Created IoT-based smart systems using Arduino, C++, and sensors for plant monitoring. Developed multiple embedded systems for various projects.",
-    icon: <FaTools className="text-green-500 text-2xl" />,
+    year: "2022",
+    title: "Worked as a CNC Programmer at Qualified Metal Fabricators, Toronto",
+    desc: "Worked as a CNC programmer for 2 years, optimizing manufacturing processes, operating machinery, and performing quality control in a high-precision environment. Gained practical skills in programming and working with automation technologies.",
+    icon: <FaLaptopCode className="text-orange-500 text-2xl" />,
   },
   {
-    year: "2025",
-    title: "Freelancing & Contributing to Open Source",
-    desc: "Hosted personal projects on GitHub, contributed to open-source repositories, improved my UI/UX skills, and built ZenDrive, a car rental system using Spring Boot.",
-    icon: <FaGlobe className="text-pink-400 text-2xl" />,
+    year: "2021",
+    title: "Completed Aerospace Manufacturing Engineering Diploma",
+    desc: "Completed the Aerospace Manufacturing Engineering program at Centennial College, Toronto, from September 2019 to April 2021. Learned core subjects like C, and C++ which sparked my interest in software development. This program provided me with a solid foundation in engineering principles, manufacturing processes, and hands-on experience with various mechanical and software tools.",
+    icon: <FaCode className="text-blue-500 text-2xl" />,
   },
 ];
 
