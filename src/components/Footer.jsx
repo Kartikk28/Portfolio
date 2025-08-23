@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-12 mt-">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+    <footer className="relative min-h-0 w-full overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black px-6 py-12 text-white">
+      <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start z-10">
         {/* Logo and Thanks */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <div className="mb-3">
@@ -22,6 +23,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-sm"
         >
@@ -37,6 +39,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm"
         >
@@ -62,7 +65,7 @@ function Footer() {
       </div>
 
       {/* Bottom Text */}
-      <p className="text-center text-xs text-gray-500 mt-10">
+      <p className="text-center text-xs text-gray-500 mt-10 relative z-10">
         Last updated by Kartik on March 28, 2025 at 8:15 PM EDT
       </p>
     </footer>
