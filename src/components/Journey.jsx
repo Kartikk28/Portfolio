@@ -221,7 +221,7 @@ export default function Journey() {
               </span>
             </h2>
             <p className="mt-2 text-center text-white/70 sm:text-left">
-              From manufacturing to software engineering
+              From Aerospace to software engineering
             </p>
           </div>
           
