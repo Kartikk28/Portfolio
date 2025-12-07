@@ -162,7 +162,7 @@ const TIMELINE = [
   },
   {
     range: "2022 – 2025",
-    title: "CNC Programmer — Qualified Metal Fabricators (Toronto)",
+    title: "Aerospace CNC Programmer — Qualified Metal Fabricators (Toronto)",
     desc:
       "Owned programming/optimization for high-precision jobs; reduced cycle time/scrap via data-driven tweaks.",
     icon: FaLaptopCode,
